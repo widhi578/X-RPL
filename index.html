@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-RPL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">X-RPL</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-item hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#wali-kelas" class="nav-item hover:text-blue-600 transition-colors">Wali Kelas</a>
+                    <a href="#pengurus" class="nav-item hover:text-blue-600 transition-colors">Pengurus</a>
+                    <a href="#anggota" class="nav-item hover:text-blue-600 transition-colors">Anggota</a>
+                    <a href="#jadwal" class="nav-item hover:text-blue-600 transition-colors">Jadwal</a>
+                    <a href="#piket" class="nav-item hover:text-blue-600 transition-colors">Piket</a>
+                    <a href="#prestasi" class="nav-item hover:text-blue-600 transition-colors">Prestasi</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                <a href="#home" class="nav-item hover:text-blue-600 transition-colors">Home</a>
+                <a href="#wali-kelas" class="nav-item hover:text-blue-600 transition-colors">Wali Kelas</a>
+                <a href="#pengurus" class="nav-item hover:text-blue-600 transition-colors">Pengurus</a>
+                <a href="#anggota" class="nav-item hover:text-blue-600 transition-colors">Anggota</a>
+                <a href="#jadwal" class="nav-item hover:text-blue-600 transition-colors">Jadwal</a>
+                <a href="#piket" class="nav-item hover:text-blue-600 transition-colors">Piket</a>
+                <a href="#prestasi" class="nav-item hover:text-blue-600 transition-colors">Prestasi</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Selamat Datang di <span class="text-blue-600">X-RPL</span></h1>
+                    <p class="text-lg text-gray-600 mb-8">Kelas X Rekayasa Perangkat Lunak angkatan 2025/2026. Kami adalah siswa-siswi berbakat yang sedang mempelajari pengembangan perangkat lunak dan teknologi informasi.</p>
+                    <div class="flex space-x-4">
+                        <a href="#anggota" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors">Lihat Anggota</a>
+                        <a href="#prestasi" class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors">Prestasi Kami</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center fade-in">
+                    <div class="float-animation">
+                        <img src="https://thumbs2.imgbox.com/57/51/1FTso7jA_t.jpg" alt="Siswa-siswi X-RPL sedang berdiskusi di ruang kelas dengan komputer dan buku pelajaran" class="rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wali Kelas Section -->
+    <section id="wali-kelas" class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Wali Kelas</h2>
+            <p class="text-gray-600 text-center mb-12">Guru pembimbing yang mendukung perkembangan akademik dan karakter kami</p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10 fade-in">
+                <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-100 shadow-lg">
+                    <img src="https://thumbs2.imgbox.com/44/6f/HROxjyr0_t.jpg" alt="Foto Ibu Sari, wali kelas X-RPL, seorang guru profesional dengan senyum ramah dan kacamata" class="w-full h-full object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Abdul Wahid, S.Pd</h3>
+                    <p class="text-blue-600 mb-4">Wali Kelas X-RPL</p>
+                    <p class="text-gray-600 mb-4">Sebagai wali kelas X-RPL, Pak Wahid telah membimbing kami dengan dedikasi tinggi dan perhatian terhadap setiap perkembangan siswa. Beliau selalu mendorong kami untuk mencapai potensi terbaik baik dalam akademik, non-akademik, maupun karakter.</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-blue-50 text-blue-600 px-4 py-2 rounded-lg">Guru PJOK</div>
+                        <div class="bg-blue-50 text-blue-600 px-4 py-2 rounded-lg">15 Tahun Pengalaman</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guru Kejuruan Section -->
+    <section id="wali-kelas" class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Guru Kejuruan</h2>
+            <p class="text-gray-600 text-center mb-12">Guru yang mengajarkan keterampilan praktis, pengetahuan, dan kompetensi yang dibutuhkan untuk kami</p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10 fade-in">
+                <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-100 shadow-lg">
+                    <img src="https://placehold.co/400x400" alt="Foto Ibu Sari, wali kelas X-RPL, seorang guru profesional dengan senyum ramah dan kacamata" class="w-full h-full object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Ardana Adam Sutrisno, S.Pd</h3>
+                    <p class="text-blue-600 mb-4">Guru Kejuruan X-RPL</p>
+                    <p class="text-gray-600 mb-4">Sebagai guru kejuruan, beliau selalu membimbing siswa dengan penuh kesabaran dan profesionalisme. Dengan pengalaman yang dimiliki, beliau tidak hanya mengajarkan keterampilan teknis, tetapi juga menanamkan disiplin, tanggung jawab, dan etos kerja yang baik agar siswa siap menghadapi dunia industri maupun melanjutkan pendidikan ke jenjang lebih tinggi.</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-blue-50 text-blue-600 px-4 py-2 rounded-lg">Guru Kejuruan</div>
+                        <div class="bg-blue-50 text-blue-600 px-4 py-2 rounded-lg">5 Tahun Pengalaman</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengurus Kelas Section -->
+    <section id="pengurus" class="bg-gray-50 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Pengurus Kelas</h2>
+            <p class="text-gray-600 text-center mb-12">Tim pengurus yang menjalankan organisasi kelas dengan efektif</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Ketua Kelas -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://placehold.co/400x300" alt="Foto Andi, Ketua Kelas X-RPL, siswa berprestasi dengan seragam rapi dan percaya diri" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Radhitya Ramadhan</h3>
+                        <p class="text-blue-600 mb-4">Ketua Kelas</p>
+                        <p class="text-gray-600">Bertanggung jawab memimpin kelas dan koordinasi dengan guru serta siswa.</p>
+                    </div>
+                </div>
+                
+                <!-- Wakil Ketua -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://placehold.co/400x300" alt="Foto Sinta, Wakil Ketua X-RPL, siswa aktif dengan ekspresi ceria dan bertanggung jawab" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Azzura Ghazala Khoirunnisa</h3>
+                        <p class="text-blue-600 mb-4">Wakil Ketua</p>
+                        <p class="text-gray-600">Mendukung ketua dalam menjalankan tugas dan menggantikan ketika diperlukan.</p>
+                    </div>
+                </div>
+                
+                <!-- Sekretaris 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://placehold.co/400x300" alt="Foto Rina, Sekretaris X-RPL, siswa teliti dengan buku catatan dan penampilan rapi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Fristy Hanafia Sabila</h3>
+                        <p class="text-blue-600 mb-4">Sekretaris 1</p>
+                        <p class="text-gray-600">Mengelola administrasi kelas.</p>
+                    </div>
+                </div>
+
+                <!-- Sekertaris 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://placehold.co/400x300" alt="Foto Rina, Sekretaris X-RPL, siswa teliti dengan buku catatan dan penampilan rapi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Shira Artanti</h3>
+                        <p class="text-blue-600 mb-4">Sekretaris 2</p>
+                        <p class="text-gray-600">Mengelola administrasi kelas.</p>
+                    </div>
+                </div>
+
+                <!-- Bendahara 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://placehold.co/400x300" alt="Foto Rina, Sekretaris X-RPL, siswa teliti dengan buku catatan dan penampilan rapi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Tsaniyah Alannisa Munifah</h3>
+                        <p class="text-blue-600 mb-4">Bendahara 1</p>
+                        <p class="text-gray-600">Mengelola keuangan kelas.</p>
+                    </div>
+                </div>
+
+                <!-- Bendahara 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://placehold.co/400x300" alt="Foto Rina, Sekretaris X-RPL, siswa teliti dengan buku catatan dan penampilan rapi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Kayla Chalista Ibrahim</h3>
+                        <p class="text-blue-600 mb-4">Bendahara 2</p>
+                        <p class="text-gray-600">Mengelola Keuangan kelas.</p>
+                    </div>
+                </div>
+
+                <!-- Keamanan 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://placehold.co/400x300" alt="Foto Rina, Sekretaris X-RPL, siswa teliti dengan buku catatan dan penampilan rapi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Ahmad Widhi Praditya</h3>
+                        <p class="text-blue-600 mb-4">Keamanan 1</p>
+                        <p class="text-gray-600">Menjaga ketertiban kelas.</p>
+                    </div>
+                </div>
+
+                <!-- Keamanan 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://placehold.co/400x300" alt="Foto Rina, Sekretaris X-RPL, siswa teliti dengan buku catatan dan penampilan rapi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Januar Miftah Nugroho</h3>
+                        <p class="text-blue-600 mb-4">Keamanan 2</p>
+                        <p class="text-gray-600">Menjaga keamanan kelas.</p>
+                    </div>
+                </div>
+
+                <!-- Kebersihan 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://placehold.co/400x300" alt="Foto Rina, Sekretaris X-RPL, siswa teliti dengan buku catatan dan penampilan rapi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Rezky Kurniawan</h3>
+                        <p class="text-blue-600 mb-4">kebersihan 1</p>
+                        <p class="text-gray-600">Menjaga kebersihan kelas.</p>
+                    </div>
+                </div>
+
+                <!-- Kebersihan 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://placehold.co/400x300" alt="Foto Rina, Sekretaris X-RPL, siswa teliti dengan buku catatan dan penampilan rapi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Rakha Saputra Yudhiansyah</h3>
+                        <p class="text-blue-600 mb-4">Kebersihan 2</p>
+                        <p class="text-gray-600">Menjaga kebersihan kelas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anggota Kelas Section -->
+    <section id="anggota" class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Anggota Kelas</h2>
+            <p class="text-gray-600 text-center mb-12">35 siswa-siswi berbakat yang membentuk keluarga X-RPL</p>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <!-- Generating 36 student cards -->
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 1, seragam rapi dan senyum ramah" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Afifah Taqyya Hasna</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 1</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 2, tampil percaya diri dan bersemangat" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Ahmad Widhi Praditya</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 2</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Aira Eka Putri</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 3</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Aira Mahadewi</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 4</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Aira Ramadhani Hetharia</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 5</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Aira Septia Ramadhina</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 6</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Aisyah Putri Aswin</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 7</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Asyifa Zahra</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 8</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Azzura Ghazala Khoirunnisa</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 9</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Bhamakerti Pandya Putra</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 10</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Dimas Rizky Sudaryanto</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 11</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Fidya Fitri Ramadhani</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 12</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Fristy Hanafia Sabilla</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 13</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Hilda Nur Khoiriah</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 14</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Januar Miftah Nugroho</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 15</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Kanaya Maulidina</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 16</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Kayla Chalista Ibrahim</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 17</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">M. Raihan Mizwari Hardiansyah</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 18</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">M. Fayyadh Al Hazza</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 19</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Maulana Assyam Almahabbi</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 20</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Muhammad Haikal Setiawan</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 21</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Muhammad Azril</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 22</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Muhammad Faiz Ramadhan</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 23</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Muhammad Ravael Alfarizky</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 24</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Muhammad Rezky Kurniawan</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 25</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Nur Afrina Putri Hartini</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 26</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">R. Juan A. Tristan Soetisnahamijaya</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 27</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Radhitya Ramadhan</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 28</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Rakha Saputra Yudhiansyah</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 29</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Rasyad Alpha Kaka Hagiansyah</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 30</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Riski Putra</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 31</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Saffa May Dinna</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 32</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Shira Artanti</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 33</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Syifa Nadhifa Putri</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 34</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 text-center fade-in">
+                    <div class="w-16 h-16 mx-auto rounded-full overflow-hidden mb-2">
+                        <img src="https://placehold.co/100x100" alt="Foto siswa X-RPL dengan nomor absen 3, berpenampilan rapi dan siap belajar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">Tsaniyah Alannisa Munifah</h3>
+                    <p class="text-xs text-gray-500">No. Absen: 35</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jadwal Pelajaran Section -->
+<section id="jadwal" class="bg-gray-50 py-20">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Jadwal Pelajaran</h2>
+    <p class="text-gray-600 text-center mb-12">Jadwal pelajaran kelas X-RPL setiap hari</p>
+
+    <div class="overflow-x-auto">
+      <table class="w-full bg-white rounded-xl shadow-md overflow-hidden">
+        <thead>
+          <tr class="bg-blue-600 text-white">
+            <th class="py-3 px-6 text-left">Hari</th>
+            <th class="py-3 px-6 text-left">Mata Pelajaran</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-3 px-6 font-semibold">Senin</td>
+            <td class="py-3 px-6">
+              <ul class="list-disc pl-5">
+                <li>Informatika</li>
+                <li>Matematika</li>
+                <li>Seni Budaya</li>
+                <li>Dasar-Dasar Kejuruan</li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="border-b bg-gray-50">
+            <td class="py-3 px-6 font-semibold">Selasa</td>
+            <td class="py-3 px-6">
+              <ul class="list-disc pl-5">
+                <li>Bahasa Indonesia</li>
+                <li>PJOK</li>
+                <li>Informatika</li>
+                <li>Koding dan Kecerdasan Artificial</li>
+                <li>Bimbingan Konseling</li>
+                <li>Pendidikan Pancasila</li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-3 px-6 font-semibold">Rabu</td>
+            <td class="py-3 px-6">
+              <ul class="list-disc pl-5">
+                <li>IPAS</li>
+                <li>Sejarah</li>
+                <li>Bahasa Indonesia</li>
+                <li>Pendidikan Agama Islam</li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="border-b bg-gray-50">
+            <td class="py-3 px-6 font-semibold">Kamis</td>
+            <td class="py-3 px-6">
+              <ul class="list-disc pl-5">
+                <li>Matematika</li>
+                <li>Bahasa Inggris</li>
+                <li>Dasar-Dasar Kejuruan</li>
+                <li>Koding dan Kecerdasan Artificial</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 px-6 font-semibold">Jumat</td>
+            <td class="py-3 px-6">
+              <ul class="list-disc pl-5">
+                <li>Dasar-Dasar Kejuruan</li>
+                <li>IPAS</li>
+                <li>Mulok Betawi</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+    <!-- Pengingat PR Section -->
+    <section id="pr" class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Pengingat PR</h2>
+            <p class="text-gray-600 text-center mb-12">Tambahkan dan kelola daftar PR kelas X-RPL</p>
+            
+            <!-- Form Tambah PR -->
+            <div class="max-w-2xl mx-auto bg-gray-50 rounded-xl shadow-md p-6 mb-8">
+                <form id="pr-form" class="flex flex-col md:flex-row gap-4">
+                    <input type="text" id="pr-subject" placeholder="Mata Pelajaran" required
+                           class="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="text" id="pr-task" placeholder="Tugas / Deskripsi PR" required
+                           class="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit"
+                            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Tambah
+                    </button>
+                </form>
+            </div>
+
+            <!-- Daftar PR -->
+            <div id="pr-list" class="max-w-2xl mx-auto space-y-4">
+                <!-- PR Items akan muncul di sini -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Jadwal Piket Section -->
+    <section id="piket" class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Jadwal Piket</h2>
+            <p class="text-gray-600 text-center mb-12">Petugas piket kebersihan kelas setiap hari</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-blue-50 rounded-xl p-6 fade-in">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">Senin</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">1</span>
+                            Afifah
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">2</span>
+                            Dimas
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">3</span>
+                            Radhitya
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">4</span>
+                            Tsaniyah
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">5</span>
+                            Saffa/Nana
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">6</span>
+                            Aisyah
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">7</span>
+                            Raihan Wangsaff
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-50 rounded-xl p-6 fade-in">
+                    <h3 class="text-xl font-semibold text-green-600 mb-4">Selasa</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="bg-green-100 text-green-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">1</span>
+                            Kaka
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-green-100 text-green-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">2</span>
+                            Faiz
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-green-100 text-green-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">3</span>
+                            Hilda
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-green-100 text-green-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">4</span>
+                            Haikal
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-green-100 text-green-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">6</span>
+                            Widhi
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-green-100 text-green-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">7</span>
+                            Syifa
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-green-100 text-green-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">8</span>
+                            Kayla
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-yellow-50 rounded-xl p-6 fade-in">
+                    <h3 class="text-xl font-semibold text-yellow-600 mb-4">Rabu</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="bg-yellow-100 text-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">1</span>
+                            Assyam
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-yellow-100 text-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">2</span>
+                            Azril
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-yellow-100 text-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">3</span>
+                            Aira Ramadhani
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-yellow-100 text-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">4</span>
+                            Afrina
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-yellow-100 text-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">5</span>
+                            Riski Putra
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-yellow-100 text-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">6</span>
+                            Shira
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-yellow-100 text-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">7</span>
+                            Fidya
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-red-50 rounded-xl p-6 fade-in">
+                    <h3 class="text-xl font-semibold text-red-600 mb-4">Kamis</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="bg-red-100 text-red-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">1</span>
+                            Januar
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-red-100 text-red-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">2</span>
+                            Bhamakerti
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-red-100 text-red-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">3</span>
+                            Juan
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-red-100 text-red-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">4</span>
+                            Fristy
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-red-100 text-red-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">5</span>
+                            Fayyadh
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-red-100 text-red-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">6</span>
+                            Asyifa
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-red-100 text-red-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">7</span>
+                            Kanaya
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-blue-50 rounded-xl p-6 fade-in">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">Jumat</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">1</span>
+                            Aira Septia
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">2</span>
+                            Ravael
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">3</span>
+                            Azzura
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">4</span>
+                            Aira Eka/Ara
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">5</span>
+                            Awan
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">6</span>
+                            Aira Mahadewi
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-2">7</span>
+                            Rakha
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prestasi Kelas Section -->
+    <section id="prestasi" class="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Prestasi Kelas</h2>
+            <p class="text-gray-600 text-center mb-12">Belum Ada</p>
+        </div>
+    </section>
+ 
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">X-RPL</h3>
+                    <p class="text-gray-400">SMK Negeri 40 Jakarta</p>
+                    <p class="text-gray-400 mt-2">Jl. Nanas II No.9, RT.9/RW.10, Utan Kayu Utara, Kec. Matraman, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13120</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#pengurus" class="text-gray-400 hover:text-white transition-colors">Pengurus Kelas</a></li>
+                        <li><a href="#jadwal" class="text-gray-400 hover:text-white transition-colors">Jadwal Pelajaran</a></li>
+                        <li><a href="#prestasi" class="text-gray-400 hover:text-white transition-colors">Prestasi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="text-xl font-bold mb-4">Sosial Media</h3>
+                    <ul class="space-y-2">
+                       <li><a href="https://www.tiktok.com/@warengineer?_t=ZS-8znkIe9tj44&_r=1" class="text-gray-400 hover:text-white transition-colors">Tiktok</a></li>
+                       <li><a href="https://www.instagram.com/waregineer?igsh=OHV2bG5veGFvc3Ji" class="text-gray-400 hover:text-white transition-colors">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 X-RPL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
