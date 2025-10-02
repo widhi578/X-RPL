@@ -137,3 +137,10 @@
 
         // Render saat halaman pertama kali load
         renderPR();
+
+        // Agar bisa flip dengan klik, bukan cuma hover
+document.querySelectorAll('.flip-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped');
+  });
+});
