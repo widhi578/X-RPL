@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Register | X-RPL</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-b from-white to-blue-50 min-h-screen flex flex-col">
+  <!-- Form Register -->
   <div class="flex flex-1 justify-center items-center">
     <div class="bg-white shadow-lg rounded-2xl p-10 w-full max-w-md">
       <h2 class="text-2xl font-bold text-center text-blue-600 mb-6">Daftar Akun Baru</h2>
 
-      <form action="register.php" method="POST" class="space-y-5">
+      <form action="register.php" method="POST" class="space-y-5" onsubmit="return validasiPassword()">
         <div>
           <label class="block text-gray-700 font-medium">Nama Lengkap</label>
           <input type="text" name="nama" required class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none">
@@ -24,7 +25,13 @@
 
         <div>
           <label class="block text-gray-700 font-medium">Password</label>
-          <input type="password" name="password" required class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+          <input type="password" id="password" name="password" required class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium">Konfirmasi Password</label>
+          <input type="password" id="confirm_password" required class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+          <p id="error-msg" class="text-red-600 text-sm mt-1 hidden">Password tidak cocok!</p>
         </div>
 
         <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-xl transition">
@@ -38,5 +45,7 @@
       </p>
     </div>
   </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>

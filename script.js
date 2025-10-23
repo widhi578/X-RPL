@@ -143,3 +143,17 @@
     card.classList.toggle('flipped');
   });
 });
+
+function validasiPassword() {
+      const password = document.getElementById("password").value;
+      const confirm = document.getElementById("confirm_password").value;
+      const error = document.getElementById("error-msg");
+
+      if (password !== confirm) {
+        error.classList.remove("hidden");
+        return false;
+      } else {
+        error.classList.add("hidden");
+        return true;
+      }
+    }
