@@ -144,39 +144,3 @@
   });
 });
 
-function validasiPassword() {
-      const password = document.getElementById("password").value;
-      const confirm = document.getElementById("confirm_password").value;
-      const error = document.getElementById("error-msg");
-
-      if (password !== confirm) {
-        error.classList.remove("hidden");
-        return false;
-      } else {
-        error.classList.add("hidden");
-        return true;
-      }
-    }
-
-document.getElementById('forgotForm').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const data = new FormData(e.target);
-      const res = await fetch('api/forgot_password.php', { method: 'POST', body: data });
-      const result = await res.json();
-
-      alert(result.message);
-    });
-
-document.getElementById('loginForm').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const data = new FormData(e.target);
-      const res = await fetch('api/login.php', { method: 'POST', body: data });
-      const result = await res.json();
-
-      if (result.status === 'success') {
-        alert('Login berhasil!');
-        window.location = 'index.html';
-      } else {
-        alert(result.message);
-      }
-    });
