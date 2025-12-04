@@ -144,3 +144,14 @@
   });
 });
 
+function validasiPassword() {
+  const pass = document.getElementById("password").value;
+  const confirm = document.getElementById("confirm_password").value;
+  const errorMsg = document.getElementById("error-msg");
+
+  if (pass !== confirm) {
+    errorMsg.classList.remove("hidden");
+    return false;
+  }
+  return true;
+}
